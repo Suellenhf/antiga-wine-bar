@@ -1,0 +1,51 @@
+@import url("https://use.typekit.net/tar7pao.css");
+
+.homepage {
+  font-family: quasimoda,sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  width: 100%;
+  min-width: 320px;
+  max-width: 1200px;
+  margin: 0;
+}
+
+.homepage-img > img {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.menu-main {
+    background: #F8E4B7;
+    width: 100vw;
+    min-height: 600px;
+    margin-top: -3px;
+}
+
+.img-main {
+  width: 500px;
+  height: 400px;
+  margin-top: 80px;
+  margin-left: 50px;
+}
+
+.menu-main > p {
+  display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: baseline;
+	align-content: stretch;
+}
+
+/* .img-main-dois {
+  width: 500px;
+  height: 700px;
+} */
+
+footer {
+  background-color: #242222;
+  width: 100vw;
+  min-height: 300px;
+}
