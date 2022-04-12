@@ -1,0 +1,9 @@
+:root {
+    --max-width: 1280px;
+
+    --mobile-padding: .75rem 1.5rem;
+
+    --primary-color: #242222;
+    --secondary-color: #F8E4B7;
+    --white-color: #fff;
+}

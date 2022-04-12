@@ -1,0 +1,139 @@
+header {
+    position: sticky;
+    top: 0;
+
+    width: 100vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    background-color: var(--primary-color);
+}
+
+.header-wrapper {
+    width: 100%;
+    max-width: var(--max-width);
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    padding: .75rem;
+
+    font-family: quasimoda, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 1.2rem;
+    color: var(--white-color);
+}
+
+.header-actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+header .menu-icon {
+    display: none;
+}
+
+header .menu-icon .fas {
+    font-size: 2rem;
+}
+
+.header-logo img {
+    width: 60px;
+    height: 60px;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar .nav-link {
+    align-self: center;
+    
+    padding: 0.5rem 1rem;
+}
+
+.navbar .nav-link a {
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:active {
+    background-color: var(--secondary-color);
+}
+
+.navbar .nav-link:hover a,
+.navbar .nav-link:active a {
+    color: var(--primary-color);
+}
+
+.nav-links-mobile {
+    max-height: 0;
+    flex-basis: 100%;
+    overflow: hidden;
+
+    transition: max-height 2s;
+}
+
+.nav-item {
+    padding: 16px 24px;
+    margin-bottom: 24px;
+}
+
+.nav-item:first-child {
+    margin-top: 36px;
+}
+
+.nav-item a {
+    display: block;
+
+    color: var(--white-color);
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+}
+
+header.mobile-open .nav-links-mobile {
+    display: fixed;
+    top: 0;
+
+    max-height: 100vh;
+}
+
+@media screen and (max-width: 667px) {
+
+    .header-actions {
+        width: 100%;
+    }
+
+    .header-wrapper {
+        padding: var(--mobile-padding);
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .menu-icon {
+        display: inherit !important;
+
+        align-self: center;
+    }
+}
+
+@media screen and (min-width: 668px) {
+
+    header.mobile-open {
+        position: inherit;
+        height: auto;
+    }
+
+    .nav-links-mobile {
+        display: none !important;
+    }
+
+}

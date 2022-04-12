@@ -1,0 +1,14 @@
+@import url("https://use.typekit.net/tar7pao.css");
+
+
+h1 {
+    font-family: quasimoda,sans-serif;
+    font-size: 200px;
+    background-color: #F8E4B7;
+    height: 1200px;
+    font-style: normal;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}

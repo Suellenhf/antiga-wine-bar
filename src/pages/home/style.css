@@ -24,10 +24,11 @@
 }
 
 .img-main {
-  width: 500px;
-  height: 400px;
+  max-width: 100%;
+  /* width: 500px; */
+  /* height: 400px; */
   margin-top: 80px;
-  margin-left: 50px;
+  /* margin-left: 50px; */
 }
 
 .menu-main > p {
